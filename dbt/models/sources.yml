@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: electric_vehicle
+    database: de-project-2024
+    schema: electric_vehicle
+    tables:
+      - name: vehicle_data_population
