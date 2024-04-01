@@ -50,11 +50,18 @@ Note: Credit card required for signup, but a free trial is available.
 8. Once is ready, you can start the pipeline. Starting with Data Loader, Transformer and Exporters
 
 ## DBT - data build tool
-1. Use service account keys from GCP to create a new project on dbt platform
-2. 2
+1. Sign Up: Go to the dbt Cloud website and sign up for an account.
+2. Create a New Project: Once logged in, create a new project by clicking on the "New Project" button
+3. Connect Your Data Warehouse: Connect your data warehouse to dbt Cloud by providing *service account key* from GCP
+4. Initialize Your Project: After connecting your data warehouse, dbt Cloud will guide you through initializing your project. Follow the prompts to set up your project structure.
+5. Write SQL Models: Write SQL models directly in the dbt Cloud interface and choose "Models" tab to create new models (cafv_eligibility.sql, vehicle_aggregats.sql, vehicle_locations.sql) and "Macros" - especially useful for big SQL project.
+6. Run dbt: Run dbt directly from the dbt Cloud interface once everything is ready. This process will transfer the data to GCP dataset directly, just in case is working without any issues.
+7. Documentation: Use *dbt docs generate & dbt docs generate*
 
 ## Google Looker
-1. 
+1. Sign in to Google Looker Studio using your Google account 
+2. Use the BigQuery Connector to connect your dataset - In this case choose the file that 
+3. Choose your project name and then select the dataset you want to work with. This action will take you to the dashboard page
 
 
 
