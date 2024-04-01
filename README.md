@@ -48,6 +48,7 @@ Note: Credit card required for signup, but a free trial is available.
 6. Launch Mage AI: Start the container with docker-compose up and visit *localhost:6789*
 7. Configure Docker,GCP,etc settings: Adjust settings in *io_config.yaml* from VS code or Google Cloud keys.
 8. Once is ready, you can start the pipeline. Starting with Data Loader, Transformer and Exporters
+![Mage Ai Tree](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/mage%20tree.JPG)
 
 ## DBT - data build tool
 1. Sign Up: Go to the dbt Cloud website and sign up for an account.
@@ -57,11 +58,13 @@ Note: Credit card required for signup, but a free trial is available.
 5. Write SQL Models: Write SQL models directly in the dbt Cloud interface and choose "Models" tab to create new models (cafv_eligibility.sql, vehicle_aggregats.sql, vehicle_locations.sql) and "Macros" - especially useful for big SQL project.
 6. Run dbt: Run dbt directly from the dbt Cloud interface once everything is ready. This process will transfer the data to GCP dataset directly, just in case is working without any issues.
 7. Documentation: Use *dbt docs generate & dbt docs generate*
+![Lineage](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/dbt%20lineage.JPG)
 
 ## Google Looker
 1. Sign in to Google Looker Studio using your Google account 
 2. Use the BigQuery Connector to connect your dataset - In this case choose the file that 
 3. Choose your project name and then select the dataset you want to work with. This action will take you to the dashboard page
+[LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/visualisation/cafv_eligibility_project.pdf)
 
 
 
