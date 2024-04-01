@@ -1,0 +1,54 @@
+if 'transformer' not in globals():
+    from mage_ai.data_preparation.decorators import transformer
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+import pandas as pd
+
+@transformer
+def transform(data, *args, **kwargs):
+    """
+    Perform data cleaning and transformation on the electric vehicle dataset.
+    """
+    # Convert the input data to a pandas DataFrame if it's a list
+    if isinstance(data, list):
+        data = pd.DataFrame(data)
+
+    # Group by 'Make' and count the number of 'Model'
+    make_model_count = data.groupby('Make')['Model'].count().reset_index(name='total_models')
+
+    # List top 15 Makes by number of models
+    top_15_makes = make_model_count.nlargest(15, 'total_models')
+
+    # Filter the DataFrame for a specific Make 
+    audi_models = data[data['Make'] == 'AUDI']
+
+    # Filter the postal_data DataFrame for a specific make (e.g., 'TESLA') and get the top and bottom 40 records
+    tesla_postal_top40 = postal_data[postal_data['Make'] == 'TESLA'].nlargest(40, 'Model Year')
+    tesla_postal_bottom40 = postal_data[postal_data['Make'] == 'TESLA'].nsmallest(40, 'Model Year')
+
+    # Group by 'County', 'Postal Code', 'State', 'Make' and count the number of 'Model'
+    postal_data = data.groupby(['Postal Code', 'Make', 'Model Year', 'State'])['Model'].count().reset_index(name='total_models_by_postal_code')
+    county_postal_data = data.groupby(['County', 'Postal Code', 'State', 'Make'])['Model'].count().reset_index(name='total_models_by_county_postal')
+    model_year_data = data.groupby(['Model Year', 'Make', 'Model', 'Electric Vehicle Type'])['Model'].count().reset_index(name='total_models')
+    evtype_data = data.groupby('Electric Vehicle Type')['Model'].count().reset_index(name='total_models_by_evtype')
+    legislative_make_data = data.groupby(['Legislative District', 'Make'])['Model'].count().reset_index(name='total_models_by_legislative_make')
+    electric_utility_make_data = data.groupby(['Electric Utility', 'Make'])['Model'].count().reset_index(name='total_models_by_electric_utility_make')
+    cafv_make_modelyear_data = data.groupby(['Clean Alternative Fuel Vehicle (CAFV) Eligibility', 'Make', 'Model Year'])['Model'].count().reset_index(name='total_cafv_eligible_models')
+
+
+    # Filter 'Electric Range' GREATER than 200
+    ele_range_above200 = data[data['Electric Range'] > 200]
+
+    # Filter 'Electric Range' LESS than 200
+    ele_range_below200 = data[data['Electric Range'] < 200]
+
+    return data
+
+
+@test
+def test_output(output, *args) -> None:
+    """
+    Test the output of the transformer block.
+    """
+    assert output is not None, 'The output is undefined'
+    assert isinstance(output, pd.DataFrame), 'The output should be a pandas DataFrame'
