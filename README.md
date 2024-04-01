@@ -64,7 +64,9 @@ Note: Credit card required for signup, but a free trial is available.
 1. Sign in to Google Looker Studio using your Google account 
 2. Use the BigQuery Connector to connect your dataset - In this case choose the file that 
 3. Choose your project name and then select the dataset you want to work with. This action will take you to the dashboard page
-[LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/visualisation/cafv_eligibility_project.pdf)
+![Graph 1](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-1.JPG)
+![Graph 2](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-2.JPG)
+
 
 
 
