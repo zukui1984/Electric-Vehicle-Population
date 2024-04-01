@@ -16,22 +16,19 @@ Create GCP Account:
 Note: Credit card required for signup, but a free trial is available.
 
 2. Create a New Project:
-- Navigate to the GCP Console.
-- Install Google SDK
-- Create a new project with a suitable name. Note down the project ID.
+- Navigate to the GCP Console & install Google SDK
+- Create a new project with a suitable name. Note down the project ID
 
 3. Create Service Account:
-- In the sidebar, go to "IAM & Admin" > "Service accounts." After click "Create service account."
-- Provide a name and description.
-- Choose roles: BigQuery Admin, Storage Admin, Compute Admin. Then click "Create."
+- In the sidebar, go to "IAM & Admin" > "Service accounts." After click "Create service account"
+- Provide a name and description
+- Choose roles: BigQuery Admin, Storage Admin, Compute Admin. Then "Create"
 
 4. Download Service Account Key:
-- Click on the created service account.
-- Go to the "Keys" tab and click "Add Key."
-- Choose "JSON" key type and click "Create" to download.
+- Click on the created service account then go to the "Keys" tab and click "Add Key"
+- Choose "JSON" key type and click "Create" to download
 
-5. Enable BigQuery API:
-- Go to the BigQuery API and after enable it
+5. Enable BigQuery API: Go to the BigQuery API and after enable it
 
 ## Terraform 
 * terraform init to create terraform and installation guidance can be found on their official website
