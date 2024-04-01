@@ -9,6 +9,9 @@ The dataset from DATA.GOV provides information on Battery Electric Vehicles (BEV
 * Are there specific brands or models that dominate the market?
 * Are there any noticeable trends in the adoption of electric vehicles?
 
+## Diagram structure
+![Diagram](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/miro%20diagram.jpg)
+
 ## Google Cloud Platform (GCP):
 Create GCP Account:
 
