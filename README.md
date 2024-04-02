@@ -56,6 +56,14 @@ Note: Credit card required for signup, but a free trial is available
 7. Configure Docker,GCP,etc settings: Adjust settings in *io_config.yaml* from VS code or Google Cloud keys.
 8. Once is ready, you can start the pipeline. Starting with Data Loader, Transformer and Exporters
 
+<p float="center">
+  <img src="https://github.com/zukui1984/dbt_project/blob/master/data-loader.JPG" width="300" />
+  <strong>Data Loader</strong>
+  <img src="https://github.com/zukui1984/dbt_project/blob/master/data%20exporter.JPG" width="300" />
+  <strong>Data Transformer</strong>
+  <img src="https://github.com/zukui1984/dbt_project/blob/master/data%20exporter.JPG" width="300" />
+  <strong>Data Exporter</strong>
+</p>
 ![Mage Ai Tree](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/mage%20tree.JPG)
 
 ## dbt - data build tool
@@ -75,7 +83,7 @@ Note: Credit card required for signup, but a free trial is available
 3. Choose your project name and then select the dataset you want to work with. This action will take you to the dashboard page
 
 ![Graph 1](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-1_update.JPG)
-![Graph 2](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-2.JPG)
+![Graph 2](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-1.JPG)
 
 
 
