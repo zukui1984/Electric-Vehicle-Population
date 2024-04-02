@@ -1,7 +1,7 @@
 # Electric vehicle population
 
 ## Problem Description:
-The dataset from DATA.GOV provides information on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) registered with the Washington State Department of Licensing (DOL), updated as of *March 16, 2024*
+The dataset from DATA.GOV provides information on Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) registered with the Washington State Department of Licensing (DOL), updated as of *March 16, 2024* [Dataset link](https://catalog.data.gov/dataset/electric-vehicle-population-data)
 
 ### Possible issues ### 
 * How many total number of electric vehicles (battery / hybrid) that registered in Washington? 
