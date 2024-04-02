@@ -74,7 +74,7 @@ Note: Credit card required for signup, but a free trial is available
 2. Use the BigQuery Connector to connect your dataset - In this case choose the file that 
 3. Choose your project name and then select the dataset you want to work with. This action will take you to the dashboard page
 
-![Graph 1](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-1.JPG)
+![Graph 1](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-1_update.JPG)
 ![Graph 2](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/visualisation-2.JPG)
 
 
