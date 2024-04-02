@@ -9,6 +9,13 @@ The dataset from DATA.GOV provides information on Battery Electric Vehicles (BEV
 * Are there specific brands or models that dominate the market?
 * Are there any noticeable trends in the adoption of electric vehicles?
 
+## Table of Content 
+1. Google Cloud Platform (GCP) - https://cloud.google.com/ 
+2. Terraform - Infrastructure as Code (IaC) - https://www.terraform.io/
+3. Mage AI - Orchestration tool - https://www.mage.ai/
+4. dbt - data build tool - https://cloud.getdbt.com/
+5. Google Looker - Data visualisation - https://lookerstudio.google.com/
+
 ## Diagram structure
 ![Diagram](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/miro%20diagram.jpg)
 
@@ -51,7 +58,7 @@ Note: Credit card required for signup, but a free trial is available
 
 ![Mage Ai Tree](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/mage%20tree.JPG)
 
-## DBT - data build tool
+## dbt - data build tool
 1. Sign Up: Go to the dbt Cloud website and sign up for an account.
 2. Create a New Project: Once logged in, create a new project by clicking on the "New Project" button
 3. Connect Your Data Warehouse: Connect your data warehouse to dbt Cloud by providing *service account key* from GCP
