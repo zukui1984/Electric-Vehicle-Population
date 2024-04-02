@@ -64,6 +64,7 @@ Note: Credit card required for signup, but a free trial is available
   <img src="https://github.com/zukui1984/dbt_project/blob/master/data%20exporter.JPG" width="300" />
   <strong>Data Exporter</strong>
 </p>
+
 ![Mage Ai Tree](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/mage%20tree.JPG)
 
 ## dbt - data build tool
