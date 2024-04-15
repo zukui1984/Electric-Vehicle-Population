@@ -79,6 +79,7 @@ Create GCP Account:
         -    `vehicle_aggregats.sql` - [LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/dbt/models/vehicle_aggregats.sql)
         -    `vehicle_locations.sql` - [LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/dbt/models/vehicle_locations.sql)
         -    `sources.yml` - [LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/dbt/models/sources.yml)
+    -  `dbt_project.yml` [LINK](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/dbt/dbt_project.yml)
 
 7. Run dbt: Run dbt directly from the dbt Cloud interface once everything is ready. This process will transfer the data to GCP dataset directly, just in case is working without any issues.
 8. Documentation: Use `dbt docs generate & dbt docs generate`
