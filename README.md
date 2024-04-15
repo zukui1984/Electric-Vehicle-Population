@@ -13,7 +13,6 @@ The dataset from DATA.GOV provides information on Battery Electric Vehicles (BEV
 1. Google Cloud Platform (GCP) - https://cloud.google.com/ 
 2. Terraform - Infrastructure as Code (IaC) - https://www.terraform.io/
 3. Mage AI - Orchestration tool - https://www.mage.ai/
-4. BigQuery (GCP)
 5. dbt - data build tool - https://cloud.getdbt.com/
 6. Google Looker - Data visualisation - https://lookerstudio.google.com/
 
@@ -44,7 +43,7 @@ Create GCP Account:
 ## Terraform 
 * `terraform init` to create terraform and installation guidance can be found on their official website
 * Use `gcloud auth login` to confirm authentication 
-* `terraform plan`: For code structure of project (`main.tf` and `variable.tf`)
+* `terraform plan`: For code structure of project ([main.tf](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/terraform/main.tf) and [variable.tf](https://github.com/zukui1984/electric-vehicle-population-project/blob/master/terraform/variable.tf))
 * `terraform apply`: Once is ready, you can proceed this command
 
 ## Mage AI
@@ -66,9 +65,6 @@ Create GCP Account:
 <p>The <b>MIDDLE  & RIGHT image (Data Exporter)</b> shows the result of the data export process, which exports the processed data for use in other applications or analysis tools.</p>
 
  <img src="https://github.com/zukui1984/electric-vehicle-population-project/blob/master/images/mage-tree.JPG" width="500" />
-
-## BigQuery 
-1. 
 
 ## dbt - data build tool
 1. Sign Up: Go to the dbt Cloud website and sign up for an account.
